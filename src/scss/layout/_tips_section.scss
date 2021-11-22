@@ -1,0 +1,38 @@
+.tips {
+  margin: 30px 15px 45px;
+  &__small {
+    color: #8ccbea;
+    font-family: $fontText;
+    font-size: toRem(14px);
+    line-height: toRem(30px);
+    text-transform: capitalize;
+  }
+  &__title {
+    color: $colorScnd;
+    font-family: $fontTitle;
+    font-size: toRem(24px);
+    line-height: toRem(30px);
+    text-transform: capitalize;
+  }
+  &__text {
+    color: #4a4a4a;
+    font-family: $fontText;
+    font-size: toRem(18px);
+    line-height: toRem(30px);
+    margin: 15px 0 30px;
+  }
+  &__btn {
+    width: 76px;
+    height: 45px;
+    background-color: transparent;
+    border: solid 2px $colorBtns;
+    border-radius: 22.5px;
+    color: $colorBtns;
+    font-family: $fontText;
+    font-size: toRem(20px);
+    font-weight: 600;
+    line-height: toRem(45px);
+    padding: 0 24px;
+    cursor: pointer;
+  }
+}
