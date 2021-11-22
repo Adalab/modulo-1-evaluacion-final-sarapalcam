@@ -27,12 +27,13 @@
     background-color: transparent;
     border: solid 2px $colorBtns;
     border-radius: 22.5px;
-    color: $colorBtns;
-    font-family: $fontText;
-    font-size: toRem(20px);
-    font-weight: 600;
-    line-height: toRem(45px);
     padding: 0 24px;
-    cursor: pointer;
+    &--link {
+      color: $colorBtns;
+      font-family: $fontText;
+      font-size: toRem(20px);
+      font-weight: 600;
+      line-height: toRem(45px);
+    }
   }
 }

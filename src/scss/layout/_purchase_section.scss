@@ -22,13 +22,15 @@
     background-color: $colorBtns;
     border: none;
     border-radius: 22.5px;
-    color: $backgrColorPurchase;
-    font-family: $fontText;
-    font-size: toRem(20px);
-    font-weight: 500;
-    line-height: toRem(45px);
     padding: 0 30px;
-    cursor: pointer;
+
+    &--link {
+      color: $colorPpal;
+      font-family: $fontText;
+      font-size: toRem(20px);
+      font-weight: 500;
+      line-height: toRem(45px);
+    }
   }
 }
 
