@@ -1,3 +1,27 @@
+@keyframes arrowFooterBounceMobile {
+  0% {
+    transform: translate(0, -80px);
+  }
+  50% {
+    transform: translate(0, -95px);
+  }
+  100% {
+    transform: translate(0, -80px);
+  }
+}
+
+@keyframes arrowFooterBounceTablet {
+  0% {
+    transform: translate(0, -65px);
+  }
+  50% {
+    transform: translate(0, -80px);
+  }
+  100% {
+    transform: translate(0, -65px);
+  }
+}
+
 .footer {
   background-color: $backgrColorFooter;
   padding: 60px 0 45px;
@@ -23,9 +47,13 @@
     transform: translate(0, -80px);
     box-shadow: 0 2px 4px 0 rgba($colorScnd, $alpha: 0.5);
     transition: all 0.3s linear;
+    animation: arrowFooterBounceMobile 2s ease-in-out infinite;
+    @include tablet {
+      transform: translate(0, -65px);
+      animation: arrowFooterBounceTablet 2s ease-in-out infinite;
+    }
     &:hover {
       background-color: $colorBtns;
-      transform: translateY(-81px);
       box-shadow: 0px 5px 10px rgba($colorScnd, 0.5);
       height: 50px;
       width: 50px;
@@ -36,9 +64,6 @@
     }
     &:hover .footer__arrow--color {
       fill: $colorPpal;
-    }
-    @include tablet {
-      transform: translate(0, -65px);
     }
   }
   &__nav {

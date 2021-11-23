@@ -58,18 +58,18 @@
     font-weight: 500;
     line-height: toRem(45px);
     transition: all 0.3s linear;
+    @include tablet {
+      width: 210px;
+    }
+    @include desktop {
+      width: 255px;
+    }
     &:hover {
       background-color: $colorPpal;
       color: $colorBtns;
       box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
       font-size: toRem(22px);
       transform: translateY(-3px);
-    }
-    @include tablet {
-      width: 210px;
-    }
-    @include desktop {
-      width: 255px;
     }
   }
 }
