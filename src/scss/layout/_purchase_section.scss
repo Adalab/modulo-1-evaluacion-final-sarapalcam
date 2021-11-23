@@ -1,29 +1,62 @@
 .purchase {
   background-color: $backgrColorPurchase;
   padding: 30px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  @include desktop {
+    padding-top: 60px;
+  }
+  &__container {
+    @include tablet {
+      width: 690px;
+    }
+    @include desktop {
+      width: 1110px;
+    }
+  }
   &__title {
     color: $colorScnd;
     font-family: $fontTitle;
     font-size: toRem(24px);
     line-height: toRem(30px);
     text-transform: capitalize;
+    @include tablet {
+      font-size: toRem(26px);
+      line-height: toRem(45px);
+    }
+    @include desktop {
+      font-size: toRem(32px);
+    }
   }
   &__articles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    margin: 0 70px;
+    margin: 0 70px 45px;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      margin: 45px 0 60px;
+      grid-gap: 30px;
+    }
+    @include desktop {
+      margin: 45px 0 60px;
+    }
   }
   &__btn {
     width: 184px;
     height: 45px;
-    margin-top: 45px;
     background-color: $colorBtns;
     border: none;
     border-radius: 22.5px;
-    padding: 0 30px;
-
+    @include tablet {
+      width: 210px;
+    }
+    @include desktop {
+      width: 255px;
+    }
     &--link {
       color: $colorPpal;
       font-family: $fontText;
@@ -36,16 +69,26 @@
 
 .article__content {
   margin-top: 45px;
+  @include tablet {
+    margin: 0;
+  }
   &--title {
     color: $colorScnd;
     font-family: $fontTitle;
     font-size: toRem(18px);
     line-height: toRem(30px);
+    @include tablet {
+      font-size: toRem(24px);
+    }
   }
   &--text {
     color: $colorScnd;
     font-family: $fontText;
     font-size: toRem(18px);
     line-height: toRem(30px);
+    @include tablet {
+      font-size: toRem(20px);
+      margin-top: 14px;
+    }
   }
 }
