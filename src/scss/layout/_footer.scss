@@ -46,24 +46,10 @@
     position: absolute;
     transform: translate(0, -80px);
     box-shadow: 0 2px 4px 0 rgba($colorScnd, $alpha: 0.5);
-    transition: all 0.3s linear;
     animation: arrowFooterBounceMobile 2s ease-in-out infinite;
     @include tablet {
       transform: translate(0, -65px);
       animation: arrowFooterBounceTablet 2s ease-in-out infinite;
-    }
-    &:hover {
-      background-color: $colorBtns;
-      box-shadow: 0px 5px 10px rgba($colorScnd, 0.5);
-      height: 50px;
-      width: 50px;
-    }
-    &:hover .footer__arrow--size {
-      height: 26px;
-      width: 24px;
-    }
-    &:hover .footer__arrow--color {
-      fill: $colorPpal;
     }
   }
   &__nav {
@@ -83,30 +69,6 @@
       font-size: toRem(16px);
       line-height: toRem(30px);
       text-transform: uppercase;
-      transition: all 0.2s linear;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        visibility: hidden;
-        transform: scaleX(0);
-        width: 110%;
-        height: 2px;
-        bottom: -3.5px;
-        left: -5%;
-        background-color: $colorBtns;
-        transition: all 0.3s linear;
-      }
-      &:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-      }
-      &:visited {
-        color: #7e86cc;
-      }
-      &:hover {
-        color: $colorBtns;
-      }
     }
   }
   &__smallsSection {

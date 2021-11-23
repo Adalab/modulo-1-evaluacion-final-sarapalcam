@@ -19,6 +19,20 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.555),
+      transparent,
+      transparent
+    );
+  }
   &__title {
     font-size: toRem(42px);
     color: $colorPpal;
@@ -27,6 +41,7 @@
     line-height: toRem(55px);
     width: 290px;
     margin: 284px 15px 0;
+    z-index: 999;
     @include tablet {
       font-size: toRem(80px);
       line-height: toRem(106px);
@@ -44,6 +59,7 @@
     color: $colorPpal;
     font-family: $fontText;
     margin: 10px 15px 45px;
+    z-index: 999;
     @include tablet {
       font-size: toRem(24px);
       margin: 20px 0 30px;
@@ -59,29 +75,13 @@
     border-radius: 50%;
     padding-top: 17px;
     margin-bottom: 53px;
-    transition: all 0.3s linear;
+    z-index: 999;
     animation: arrowHeroBounce 2s ease-in-out infinite;
     @include tablet {
       margin-bottom: 45px;
     }
     @include desktop {
       margin-bottom: 13px;
-    }
-
-    &:hover {
-      background-color: $colorBtns;
-
-      box-shadow: 0px -5px 10px rgba($colorPpal, 0.5);
-      height: 50px;
-      width: 50px;
-      padding-top: 20px;
-    }
-    &:hover .hero__arrow--size {
-      height: 13.2px;
-      width: 22px;
-    }
-    &:hover .hero__arrow--color {
-      fill: $colorPpal;
     }
   }
 }
