@@ -14,7 +14,6 @@
   transition: all 0.3s linear;
   &:hover {
     background-color: $colorBtns;
-
     box-shadow: 0px -5px 10px rgba($colorPpal, 0.5);
     height: 50px;
     width: 50px;
@@ -41,8 +40,9 @@
     background-color: $colorBtns;
     color: $colorPpal;
     box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
-    font-size: toRem(22px);
+    font-size: rem(22px);
     transform: translateY(-3px);
+    background-position: bottom;
   }
   &:active {
     background-color: $colorPpal;
@@ -56,7 +56,7 @@
     background-color: $colorPpal;
     color: $colorBtns;
     box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
-    font-size: toRem(22px);
+    font-size: rem(22px);
     transform: translateY(-3px);
   }
   &:active {
@@ -96,14 +96,14 @@
   }
   &::before {
     content: "";
-    position: absolute;
-    visibility: hidden;
     transform: scaleX(0);
     width: 110%;
     height: 2px;
     bottom: -3.5px;
     left: -5%;
     background-color: $colorBtns;
+    position: absolute;
+    visibility: hidden;
     transition: all 0.3s linear;
   }
   &:hover:before {
@@ -111,8 +111,6 @@
     transform: scaleX(1);
   }
   &:active:before {
-    visibility: visible;
-    transform: scaleX(1);
     background-color: $colorPpal;
   }
   &:hover {

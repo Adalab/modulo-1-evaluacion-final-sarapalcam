@@ -19,15 +19,15 @@
   &__title {
     color: $colorScnd;
     font-family: $fontTitle;
-    font-size: toRem(24px);
-    line-height: toRem(30px);
+    font-size: rem(24px);
+    line-height: rem(30px);
     text-transform: capitalize;
     @include tablet {
-      font-size: toRem(26px);
-      line-height: toRem(45px);
+      font-size: rem(26px);
+      line-height: rem(45px);
     }
     @include desktop {
-      font-size: toRem(32px);
+      font-size: rem(32px);
     }
   }
   &__articles {
@@ -41,9 +41,6 @@
       margin: 45px 0 60px;
       grid-gap: 30px;
     }
-    @include desktop {
-      margin: 45px 0 60px;
-    }
   }
   &__btn {
     display: inline-block;
@@ -54,9 +51,9 @@
     border-radius: 22.5px;
     color: $colorPpal;
     font-family: $fontText;
-    font-size: toRem(20px);
+    font-size: rem(20px);
     font-weight: 500;
-    line-height: toRem(45px);
+    line-height: rem(45px);
     @include tablet {
       width: 210px;
     }
@@ -74,19 +71,19 @@
   &--title {
     color: $colorScnd;
     font-family: $fontTitle;
-    font-size: toRem(18px);
-    line-height: toRem(30px);
+    font-size: rem(18px);
+    line-height: rem(30px);
     @include tablet {
-      font-size: toRem(24px);
+      font-size: rem(24px);
     }
   }
   &--text {
     color: $colorScnd;
     font-family: $fontText;
-    font-size: toRem(18px);
-    line-height: toRem(30px);
+    font-size: rem(18px);
+    line-height: rem(30px);
     @include tablet {
-      font-size: toRem(20px);
+      font-size: rem(20px);
       margin-top: 14px;
     }
   }

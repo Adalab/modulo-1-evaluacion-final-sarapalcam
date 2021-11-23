@@ -1,27 +1,3 @@
-@keyframes arrowFooterBounceMobile {
-  0% {
-    transform: translate(0, -80px);
-  }
-  50% {
-    transform: translate(0, -95px);
-  }
-  100% {
-    transform: translate(0, -80px);
-  }
-}
-
-@keyframes arrowFooterBounceTablet {
-  0% {
-    transform: translate(0, -65px);
-  }
-  50% {
-    transform: translate(0, -80px);
-  }
-  100% {
-    transform: translate(0, -65px);
-  }
-}
-
 .footer {
   background-color: $backgrColorFooter;
   padding: 60px 0 45px;
@@ -46,11 +22,6 @@
     position: absolute;
     transform: translate(0, -80px);
     box-shadow: 0 2px 4px 0 rgba($colorScnd, $alpha: 0.5);
-    animation: arrowFooterBounceMobile 2s ease-in-out infinite;
-    @include tablet {
-      transform: translate(0, -65px);
-      animation: arrowFooterBounceTablet 2s ease-in-out infinite;
-    }
   }
   &__nav {
     display: flex;
@@ -66,8 +37,8 @@
     &--item {
       color: $colorPpal;
       font-family: $fontText;
-      font-size: toRem(16px);
-      line-height: toRem(30px);
+      font-size: rem(16px);
+      line-height: rem(30px);
       text-transform: uppercase;
     }
   }
@@ -84,11 +55,11 @@
   &__small {
     color: $colorPpal;
     font-family: $fontText;
-    font-size: toRem(14px);
-    line-height: toRem(30px);
+    font-size: rem(14px);
+    line-height: rem(30px);
     &--heart {
       color: $colorBtns;
-      height: toRem(12px);
+      height: rem(12px);
       transform: translate(0, 1px);
     }
   }

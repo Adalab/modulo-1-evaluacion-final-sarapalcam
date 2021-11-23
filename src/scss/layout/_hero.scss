@@ -1,15 +1,3 @@
-@keyframes arrowHeroBounce {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 15px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
-}
-
 .hero {
   height: 100vh;
   background-image: url(../images/cover.jpg);
@@ -34,34 +22,34 @@
     );
   }
   &__title {
-    font-size: toRem(42px);
+    font-size: rem(42px);
     color: $colorPpal;
     font-family: $fontTitle;
     text-transform: uppercase;
-    line-height: toRem(55px);
+    line-height: rem(55px);
     width: 290px;
     margin: 284px 15px 0;
     z-index: 999;
     @include tablet {
-      font-size: toRem(80px);
-      line-height: toRem(106px);
+      font-size: rem(80px);
+      line-height: rem(106px);
       width: 690px;
       margin-top: 384px;
     }
     @include desktop {
-      font-size: toRem(100px);
-      line-height: toRem(132px);
+      font-size: rem(100px);
+      line-height: rem(132px);
       width: 730px;
     }
   }
   &__subtitle {
-    font-size: toRem(16px);
+    font-size: rem(16px);
     color: $colorPpal;
     font-family: $fontText;
     margin: 10px 15px 45px;
     z-index: 999;
     @include tablet {
-      font-size: toRem(24px);
+      font-size: rem(24px);
       margin: 20px 0 30px;
     }
     @include desktop {
@@ -74,14 +62,14 @@
     background-color: $colorPpal;
     border-radius: 50%;
     padding-top: 17px;
-    margin-bottom: 53px;
+    position: absolute;
+    bottom: 53px;
     z-index: 999;
-    animation: arrowHeroBounce 2s ease-in-out infinite;
     @include tablet {
-      margin-bottom: 45px;
+      bottom: 45px;
     }
     @include desktop {
-      margin-bottom: 13px;
+      bottom: 13px;
     }
   }
 }

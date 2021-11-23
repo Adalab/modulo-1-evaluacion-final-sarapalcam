@@ -1,6 +1,3 @@
-@function toRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+@function rem($pixels) {
+  @return ($pixels / $fontSize * 1rem);
 }
-
-// REVISAR ESTO PORQUE CREO QUE NO ES LO QUE YO QUIERO
