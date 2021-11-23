@@ -46,23 +46,22 @@
     }
   }
   &__btn {
+    display: inline-block;
     width: 184px;
     height: 45px;
     background-color: $colorBtns;
     border: none;
     border-radius: 22.5px;
+    color: $colorPpal;
+    font-family: $fontText;
+    font-size: toRem(20px);
+    font-weight: 500;
+    line-height: toRem(45px);
     @include tablet {
       width: 210px;
     }
     @include desktop {
       width: 255px;
-    }
-    &--link {
-      color: $colorPpal;
-      font-family: $fontText;
-      font-size: toRem(20px);
-      font-weight: 500;
-      line-height: toRem(45px);
     }
   }
 }

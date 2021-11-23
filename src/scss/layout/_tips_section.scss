@@ -54,23 +54,23 @@
     }
   }
   &__btn {
+    display: inline-block;
+    text-align: center;
     width: 76px;
     height: 45px;
     background-color: transparent;
     border: solid 2px $colorBtns;
     border-radius: 22.5px;
+    color: $colorBtns;
+    font-family: $fontText;
+    font-size: toRem(20px);
+    font-weight: 600;
+    line-height: toRem(45px);
     @include tablet {
       width: 91px;
     }
     @include desktop {
       width: 160px;
-    }
-    &--link {
-      color: $colorBtns;
-      font-family: $fontText;
-      font-size: toRem(20px);
-      font-weight: 600;
-      line-height: toRem(45px);
     }
   }
 }
