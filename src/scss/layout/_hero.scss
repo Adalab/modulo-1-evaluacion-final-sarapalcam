@@ -47,11 +47,30 @@
     border-radius: 50%;
     padding-top: 17px;
     margin-bottom: 53px;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: $colorBtns;
+      transform: translateY(3px);
+      box-shadow: 0px -5px 10px rgba($colorPpal, 0.5);
+      height: 50px;
+      width: 50px;
+      padding-top: 20px;
+    }
+    &:hover .hero__arrow--size {
+      height: 13.2px;
+      width: 22px;
+    }
+    &:hover .hero__arrow--color {
+      fill: $colorPpal;
+    }
     @include tablet {
       margin-bottom: 45px;
     }
     @include desktop {
       margin-bottom: 13px;
+    }
+    &--svg {
+      transition: all 0.3s linear;
     }
   }
 }

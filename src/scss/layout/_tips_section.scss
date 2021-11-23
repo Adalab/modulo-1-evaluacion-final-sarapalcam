@@ -58,14 +58,23 @@
     text-align: center;
     width: 76px;
     height: 45px;
-    background-color: transparent;
+    background-size: 0%;
     border: solid 2px $colorBtns;
     border-radius: 22.5px;
     color: $colorBtns;
     font-family: $fontText;
     font-size: toRem(20px);
-    font-weight: 600;
+    font-weight: 500;
     line-height: toRem(45px);
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: $colorBtns;
+      color: $colorPpal;
+      background-size: 100%;
+      box-shadow: 0px 5px 10px rgba($colorScnd, 0.3);
+      font-size: toRem(22px);
+      transform: translateY(-3px);
+    }
     @include tablet {
       width: 91px;
     }
