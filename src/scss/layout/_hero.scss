@@ -15,12 +15,30 @@
     line-height: toRem(55px);
     width: 290px;
     margin: 284px 15px 0;
+    @include tablet {
+      font-size: toRem(80px);
+      line-height: toRem(106px);
+      width: 690px;
+      margin-top: 384px;
+    }
+    @include desktop {
+      font-size: toRem(100px);
+      line-height: toRem(132px);
+      width: 730px;
+    }
   }
   &__subtitle {
     font-size: toRem(16px);
     color: $colorPpal;
     font-family: $fontText;
     margin: 10px 15px 45px;
+    @include tablet {
+      font-size: toRem(24px);
+      margin: 20px 0 30px;
+    }
+    @include desktop {
+      margin-top: 0;
+    }
   }
   &__arrow {
     height: 45px;
@@ -28,5 +46,12 @@
     background-color: $colorPpal;
     border-radius: 50%;
     padding-top: 17px;
+    margin-bottom: 53px;
+    @include tablet {
+      margin-bottom: 45px;
+    }
+    @include desktop {
+      margin-bottom: 13px;
+    }
   }
 }
