@@ -1,0 +1,17 @@
+.pricing {
+  background-color: $backgrColorFooter;
+  color: $colorPpal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 0 30px;
+      justify-content: space-between;
+    }
+  }
+}
